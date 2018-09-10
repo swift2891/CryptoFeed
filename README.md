@@ -11,7 +11,7 @@ CryptoFeed is a REST web service which responds with current crypto-currency quo
     2) CryptoFeed.war - Quick deploy file 
 
 ## Quick Deploy / Installation 
-#### (Windows. Similar steps for other OS)
+#### (For Windows. Similar steps for other OS)
     1) Download Tomcat v8.5 - https://tomcat.apache.org/download-80.cgi#8.5.33
     2) Copy the CryptoFeed.war file into extracted folder of /apache-tomcat-8.5.32/webapps/
     3) Start the TomCat by executing /apache-tomcat-8.5.32/bin/start.bat
@@ -28,14 +28,15 @@ CryptoFeed is a REST web service which responds with current crypto-currency quo
 ##### Example
     http://localhost:8080/CryptoFeed/quotes/COINBASE_SPOT_BCH_USD
     http://localhost:8080/CryptoFeed/quotes/all
+
 ##### What is symbol String?
-    |Type|Pattern|
-    |----|-------|
-    |SPOT|{exchange_id}_SPOT_{asset_id_base}_{asset_id_quote}|
-    |FUTURES|{exchange_id}_FTS_{asset_id_base}_{asset_id_quote}_{YYMMDD of future_delivery_time}|
-    |OPTION|{exchange_id}_OPT_{asset_id_base}_{asset_id_quote}_{YYMMDD of option_expiration_time}_{option_strike_price}_{option_type_is_call as C/P}|
-    |PERPETUAL|{exchange_id}_PERP_{asset_id_base}_{asset_id_quote}|
-    |INDEX|{exchange_id}_IDX_{index_id}|
+|Type|Pattern|
+|----|-------|
+|SPOT|{exchange_id}_SPOT_{asset_id_base}_{asset_id_quote}|
+|FUTURES|{exchange_id}_FTS_{asset_id_base}_{asset_id_quote}_{YYMMDD of future_delivery_time}|
+|OPTION|{exchange_id}_OPT_{asset_id_base}_{asset_id_quote}_{YYMMDD of option_expiration_time}_{option_strike_price}_{option_type_is_call as C/P}|
+|PERPETUAL|{exchange_id}_PERP_{asset_id_base}_{asset_id_quote}|
+|INDEX|{exchange_id}_IDX_{index_id}|
 
 ### Exchange Rates
 ##### HTTP Request
