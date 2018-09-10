@@ -22,7 +22,7 @@ CryptoFeed is a REST web service which responds with current crypto-currency quo
 * jersey - REST implementation and misc libraries
 
 ## API Documentation
-### Quotes
+### GET Quotes
 ##### HTTP Request
     http://localhost:8080/CryptoFeed/quotes/{symbol-id}
 ##### Example
@@ -38,17 +38,17 @@ CryptoFeed is a REST web service which responds with current crypto-currency quo
 |PERPETUAL|{exchange_id}\_PERP\_{asset_id_base}\_{asset_id_quote}|
 |INDEX|{exchange_id}\_IDX\_{index_id}|
 
-### Exchange Rates
+### GET Exchange Rates
 ##### HTTP Request
     http://localhost:8080/CryptoFeed/exchangerate/{currency}/{country}
 ##### Example
     http://localhost:8080/CryptoFeed/exchangerate/BTC/USD
     http://localhost:8080/CryptoFeed/exchangerate/BTC/all
 
-### All Symbols (used in quotes)
+### GET All Symbols (used in quotes)
 ##### HTTP Request
     http://localhost:8080/CryptoFeed/total/symbols
 
-### All Currencies (used in exchange rate)
+### GET All Currencies (used in exchange rate)
 ##### HTTP Request
     http://localhost:8080/CryptoFeed/total/assets
