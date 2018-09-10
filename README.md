@@ -10,7 +10,8 @@ CryptoFeed is a REST web service which responds with current crypto-currency quo
             web.xml - servlet configuration file
     2) CryptoFeed.war - Quick deploy file 
 
-## Quick Deploy / Installation
+## Quick Deploy / Installation 
+#### (Windows. Similar steps for other OS)
     1) Download Tomcat v8.5 - https://tomcat.apache.org/download-80.cgi#8.5.33
     2) Copy the CryptoFeed.war file into extracted folder of /apache-tomcat-8.5.32/webapps/
     3) Start the TomCat by executing /apache-tomcat-8.5.32/bin/start.bat
