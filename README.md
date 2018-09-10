@@ -6,6 +6,7 @@ CryptoFeed is a REST web service which responds with current crypto-currency quo
     1) CryptoFeed/ - Eclipse Project Folder
             QuotesHandler.java - Handles Quotes requests
             ExchangeHandler.java - Handles Exchange requests
+            CollectionHandler.java - Handles requests for total assets
             web.xml - servlet configuration file
     2) CryptoFeed.war - Quick deploy file 
 
